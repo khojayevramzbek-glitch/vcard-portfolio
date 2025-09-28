@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramzbek Xojayev — vCard · Personal Portfolio</title>
+  <meta name="description" content="vCard-style personal portfolio for Ramzbek Xojayev: projects, skills, and contact." />
+  <meta property="og:title" content="Ramzbek Xojayev — vCard Portfolio" />
+  <meta property="og:description" content="Clean, responsive vCard portfolio with projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='24' fill='%230ea5e9'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-weight='700' font-size='72' fill='white'%3ER%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topnav container">
+      <div style="display:flex; align-items:center; gap:10px">
+        <div class="badge" aria-label="Available for opportunities">Available</div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px">
+        <a href="https://github.com/khojayevramzbek-glitch" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://t.me/khojayev_o26" target="_blank" rel="noreferrer" aria-label="Telegram">Telegram</a>
+        <button class="toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container grid" style="margin-top: 16px">
+    <div class="row">
+      <!-- Left vCard panel -->
+      <div class="card" role="region" aria-label="vCard">
+        <div style="display:flex; gap:16px; align-items:center">
+          <div class="avatar">
+            <img src="photo_2025-09-28_13-32-46.jpg" alt="Avatar" />
+          </div>
+          <div>
+            <h1 class="title">Ramzbek Xojayev</h1>
+            <p class="subtitle">Student · Future Full‑Stack Developer</p>
+            <div class="actions">
+              <a class="btn" href="#contact">Hire me</a>
+              <button class="btn ghost" id="downloadVcf">Download vCard (.vcf)</button>
+              <a class="btn ghost" href="#projects">View projects</a>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border:0; border-top:1px solid rgba(148,163,184,.2); margin:16px 0" />
+        <ul class="list">
+          <li><strong>Location:</strong> Hazorasp,Karvak</li>
+          <li><strong>Email:</strong> <a href="xojayevramzbek@gmail.com">xojayevramzbek@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+998336712622">+998 (33) 671-26-22</a></li>
+          <li><strong>Languages:</strong> English (amuater), Uzbek (native), Russian (beginer), French/Arabic/Japanese (learning)</li>
+          <li><strong>Interests:</strong> Web development, UI/UX design, Marvel movies</li>
+        </ul>
+
+        <h3 class="section-title">Profiles</h3>
+        <div class="skills">
+          <a class="chip" href="https://github.com/khojayevramzbek-glitch" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="chip" href="https://www.instagram.com/khojayev_o26/" target="_blank" rel="noreferrer">instagram</a>
+          <a class="chip" href="https://t.me/khojayev_o26" target="_blank" rel="noreferrer">Telegram</a>
+          <a class="chip" href="xojayevramzbek@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <!-- Right content panel -->
+      <div class="grid" style="gap: 24px">
+        <section id="about" class="card">
+          <h3 class="section-title">About</h3>
+          <p>
+            I’m Ramz, a 15-year-old student exploring full‑stack web development. I love building clean UIs and learning modern tools.
+            When I’m not coding, I’m relaxing with Marvel movies and Adventure games. InshaAlloh, big projects are coming soon.
+          </p>
+          <div class="skills" aria-label="Highlights">
+            <span class="chip">Reliable</span>
+            <span class="chip">Fast learner</span>
+            <span class="chip">Team player</span>
+          </div>
+        </section>
+
+        <section id="projects" class="card">
+          <h3 class="section-title">Projects</h3>
+          <div class="projects">
+            <article class="project">
+              <img src="Screenshot 2025-09-28 133122.png" alt="Project thumbnail" />
+              <div class="project-body">
+                <h4>Portfolio vCard</h4>
+                <p>Single‑file responsive portfolio for GitHub Pages. Includes vCard download, dark/light mode.</p>
+                <div class="actions">
+                  <a class="btn ghost" href="#" target="_blank">Live</a>
+                  <a class="btn ghost" href="#" target="_blank">Source</a>
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <img src="download.png" alt="Project thumbnail" />
+              <div class="project-body">
+                <h4>Figma </h4>
+                <p>Simple Figma clone with basic shapes, text, colors, and image upload. Built with React.</p>
+                <div class="actions">
+                  <a class="btn ghost" href="#" target="_blank">Docs</a>
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <img src="download.jpg" alt="Project thumbnail" />
+              <div class="project-body">
+                <h4>AI</h4>
+                <p>AI image generator using OpenAI API. Create images from text prompts with various styles and sizes.</p>
+                <div class="actions">
+                  <a class="btn ghost" href="#" target="_blank">Live</a>
+                  <a class="btn ghost" href="#" target="_blank">Source</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="card">
+          <h3 class="section-title">Skills</h3>
+          <div class="skills">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3 / Flex / Grid</span>
+            <span class="chip">JavaScript (ES6+)</span>
+            <span class="chip">Git & GitHub</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">Figma to Code</span>
+          </div>
+        </section>
+
+        <section id="contact" class="card">
+          <h3 class="section-title">Contact</h3>
+          <p>Want to work together? Send me a message — I’ll reply soon, InshaAlloh.</p>
+          <form id="contactForm" class="grid" style="grid-template-columns:1fr 1fr; gap:12px">
+            <input required name="name" placeholder="Your name" style="grid-column: span 1; padding:12px; border-radius:10px; border:1px solid rgba(148,163,184,.35); background: transparent; color: var(--text)" />
+            <input required name="email" type="email" placeholder="Your email" style="grid-column: span 1; padding:12px; border-radius:10px; border:1px solid rgba(148,163,184,.35); background: transparent; color: var(--text)" />
+            <textarea required name="message" placeholder="Your message" rows="5" style="grid-column: 1 / -1; padding:12px; border-radius:10px; border:1px solid rgba(148,163,184,.35); background: transparent; color: var(--text)"></textarea>
+            <button class="btn" type="submit" style="width:max-content">Send</button>
+          </form>
+          <p id="formStatus" aria-live="polite" style="margin-top:10px; color: var(--muted)"></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ramzbek Xojayev · Built with ❤ · <a href="#" id="printBtn">Print vCard</a>
+  </footer>
+
+  <script>
+    // --- Config: edit once and you're done
+    const VCARD = {
+      firstName: "Ramzbek",
+      lastName: "Xojayev",
+      org: "Student",
+      title: "Future Full-Stack Developer",
+      tel: "+998901234567",
+      email: "yourmail@example.com",
+      city: "Tashkent",
+      country: "Uzbekistan",
+      url: "https://github.com/USERNAME",
+      telegram: "https://t.me/USERNAME"
+    };
+
+    // Theme toggle
+    const themeBtn = document.getElementById('themeToggle');
+    const setTheme = (t) => { document.documentElement.setAttribute('data-theme', t); localStorage.setItem('theme', t); themeBtn.textContent = t==='light' ? '🌙' : '☀️' };
+    setTheme(localStorage.getItem('theme') || 'dark');
+    themeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // vCard (.vcf) download
+    function buildVcf(){
+      return `BEGIN:VCARD\nVERSION:3.0\nN:${VCARD.lastName};${VCARD.firstName};;;\nFN:${VCARD.firstName} ${VCARD.lastName}\nORG:${VCARD.org}\nTITLE:${VCARD.title}\nTEL;TYPE=CELL:${VCARD.tel}\nEMAIL;TYPE=INTERNET:${VCARD.email}\nADR;TYPE=HOME:;;${VCARD.city};;;${VCARD.country}\nURL:${VCARD.url}\nX-SOCIALPROFILE;type=telegram:${VCARD.telegram}\nEND:VCARD`;
+    }
+    document.getElementById('downloadVcf').addEventListener('click', () => {
+      const blob = new Blob([buildVcf()], { type: 'text/vcard' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `${VCARD.firstName}_${VCARD.lastName}.vcf`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    // Print vCard (prints the left panel as a card)
+    document.getElementById('printBtn').addEventListener('click', (e) => { e.preventDefault(); window.print(); });
+
+    // Contact form -> opens email client with prefilled body (no backend needed)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const name = encodeURIComponent(fd.get('name'));
+      const email = encodeURIComponent(fd.get('email'));
+      const msg = encodeURIComponent(fd.get('message'));
+      const subject = encodeURIComponent(`New message from ${name}`);
+      const body = encodeURIComponent(`From: ${name} (${email})\n\n${fd.get('message')}`);
+      window.location.href = `mailto:${VCARD.email}?subject=${subject}&body=${body}`;
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Opening your email app…';
+    });
+  </script>
+</body>
+</html>
